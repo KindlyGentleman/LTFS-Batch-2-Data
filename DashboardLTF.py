@@ -5,8 +5,8 @@ import plotly.express as px
 import geopandas as gpd
 
 # import data
-data = pd.read_csv(reg_data_clean.csv)
-df_geo = gpd.read_file(indonesia.geojson)
+data = pd.read_csv('reg_data_clean.csv')
+df_geo = gpd.read_file('indonesia.geojson')
 
 # page configuration
 st.set_page_config(page_title = "LTFS Batch 2 Analysis",
