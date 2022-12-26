@@ -185,6 +185,6 @@ date_data = data_filter[['name', 'MonthDay']].groupby('MonthDay').count().rename
 fig = px.line(date_data, title = "Frekuensi Pendaftar Selama Berlangsungnya Kampanye",height = 500)
 st.plotly_chart(fig,use_container_width=True)
 
-
+st.stop()
 
 
