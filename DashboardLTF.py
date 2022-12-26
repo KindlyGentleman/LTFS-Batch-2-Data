@@ -4,9 +4,7 @@ import streamlit as st
 import plotly.express as px
 import geopandas as gpd
 
-def main():
-  @st.cache(allow_output_mutation = True)
-  
+def main(): 
   # import data
   data = pd.read_csv('reg_data_clean.csv')
   df_geo = gpd.read_file('indonesia.geojson')
